@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Management</title>
+  <link rel="stylesheet" href="Event.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Eventify</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background Video (starts below navbar) -->
+  <div class="video-wrapper">
+    <video autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Discover Events Near You</h1>
+    <input type="text" id="searchBar" placeholder="Search events by name..." />
+  </header>
+
+  <!-- Featured Events -->
+  <section class="events-section">
+    <h2>Featured Events</h2>
+    <div id="eventsContainer" class="events-container"></div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="footer">
+    <h3>Contact</h3>
+    <p><strong>Location:</strong> Islamabad, Pakistan</p>
+    <p><strong>Email:</strong> <a href="mailto:usmaanbaigg@gmail.com">usmaanbaigg@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/MUsmannBaig" target="_blank">MUsmannBaig</a></p>
+  </footer>
+
+  <script src="Event.js"></script>
+</body>
+</html>
